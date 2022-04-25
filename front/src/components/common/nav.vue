@@ -1,54 +1,48 @@
 <template>
   <div class="navWrap" @mouseover="hover" @mouseleave="leave">
       <div class="navInner">
-        <div v-show="isActive">
-          <img src="../../assets/images/head_logo_blue.svg" alt="">
-        </div>
-        <div v-show="!isActive">
-          <img src="../../assets/images/head_logo_wh.svg" alt="">
-        </div>
-
+        <p class="logo">TEXTNET</p>
         <ul class="menuWrap">
           <li>
-              <p class="menuTit">기술</p>
+              <p class="menuTit">회사소개</p>
               <ul class="menuDepth">
-                 <li>Visual AI</li>
-                 <li>AI Data</li>
+                 <li>Vision</li>
+                 <li>Investor</li>
+                 <li>History</li>
+                 <li>Contact</li>
               </ul>
           </li>
           <li>
-              <p class="menuTit">제품</p>
+              <p class="menuTit">서비스</p>
               <ul class="menuDepth">
-                 <li>AIIR SDK</li>
-                 <li>AIIR API</li>
+                 <li>AI 대화설계</li>
+                 <li>언어자원구축</li>
+                 <li>데이터레이블링</li>
               </ul>
           </li>
           <li>
-              <p class="menuTit">솔루션</p>
+              <p class="menuTit">채용</p>
               <ul class="menuDepth">
-                 <li>AIIR ID</li>
-                 <li>AIIR Pass</li>
-                 <li>AIIR Scout</li>
+                 <li>챗봇구축개발</li>
+                 <li>연구개발직</li>
+                 <li>영업개발</li>
+              </ul>
+          </li>
+          <li>
+              <p class="menuTit">팀문화</p>
+              <ul class="menuDepth">
+                 <li>이렇게 일해요</li>
+                 <li>지원제도</li>
+                 <li>일상 엿보기</li>
+              </ul>
+          </li>
+           <li>
+              <p class="menuTit">자료실</p>
+              <ul class="menuDepth">
+                 <li>참여프로젝트</li>
+                 <li>Press</li>
+                 <li>AI 트렌드</li>
                  <li>Firescout</li>
-              </ul>
-          </li>
-          <li>
-              <p class="menuTit">솔루션</p>
-              <ul class="menuDepth">
-                 <li>AIIR ID</li>
-                 <li>AIIR Pass</li>
-                 <li>AIIR Scout</li>
-                 <li>Firescout</li>
-              </ul>
-          </li>
-          <li>
-              <p class="menuTit">회사 소개</p>
-              <ul class="menuDepth">
-                 <li>알체라 소개</li>
-                 <li>보도자료</li>
-                 <li>IR</li>
-                 <li>인재채용</li>
-                 <li>제휴/도입문의</li>
               </ul>
           </li>
         </ul>
@@ -69,23 +63,24 @@
 export default {
   data() {
     return {
-      isActive: true
+      isActive : false
     }
   },
   methods: {
     hover() {
-      this.isActive = true;
       let depth = document.querySelectorAll('.menuDepth');
-      console.log(depth);
+      this.isActive = true;
       document.querySelector('.navWrap').classList.add('active');
+      document.querySelector('.logo').classList.add('logoActive');
       depth.forEach(e => {
         e.style.display = 'block';
       });
     },
     leave(){
-      this.isActive = false;
       let depth = document.querySelectorAll('.menuDepth');
+      this.isActive = false;
       document.querySelector('.navWrap').classList.remove('active');
+      document.querySelector('.logo').classList.remove('logoActive');
       depth.forEach(e => {
         e.style.display = 'none';
       });
@@ -97,13 +92,15 @@ export default {
 
 <style scoped>
   .navWrap {width: 100%; position: absolute; z-index: 2; color:rgb(255, 255, 255);}
-  .active {width: 100%; background: rgb(255, 255, 255); color:#000;}
+  .active {width: 100%; background: rgb(255, 255, 255); color:#000; }
+  .logoActive {color: #1c4ab4}
 
   .navWrap .navInner {overflow: hidden; width: 1440px; margin: 0 auto; padding: 35px 0 60px;}
   .navWrap .navInner > * {float: left;}
+  .navWrap .navInner .logo {margin: 5px 0 0; font-size: 40px; font-weight: 900;}
   .navWrap .navInner .menuWrap {overflow: hidden; margin:20px 0 0 200px;}
-  .navWrap .navInner .menuWrap > li {float: left; width: 90px; margin:0 50px 0 0;}
-  .navWrap .navInner .menuWrap li .menuTit {font-size:18px; font-weight: 600;}
+  .navWrap .navInner .menuWrap > li {float: left; width: 100px; margin:0 50px 0 0;}
+  .navWrap .navInner .menuWrap li .menuTit {font-size:18px; font-weight: 300;}
   .navWrap .navInner .menuWrap li .menuDepth {display: none; margin:30px 0 0;}
   .navWrap .navInner .menuWrap li .menuDepth li {margin:0 0 20px; font-size: 15px; font-weight: 300;}
 

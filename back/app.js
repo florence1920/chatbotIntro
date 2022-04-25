@@ -8,6 +8,15 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+var cors = require('cors');
+var mongoose = require('mongoose');
+require('dotenv').config();
+
+app.use(cors());
+
+mongoose.connect(process.env.MONGO_URI)
+.then(()=> { console.log('MongoDB Connected');})
+.catch(err => {console.log(err);})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

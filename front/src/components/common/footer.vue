@@ -4,8 +4,8 @@
     <div class="question">
       <img class="contactIco" src="../../assets/images/contact_ico.svg" alt="">
 
-      <p class="tit">알체라의 AI와 함께</p>
-      <p class="tit">누구보다 빠르게 꿈의 시대에 도달하세요.</p>
+      <p class="tit">프로젝트의 A to Z</p>
+      <p class="tit">고객과 함께 고민합니다</p>
 
       <div class="whiteBtn">
         <span>문의하기</span>
@@ -14,49 +14,49 @@
     <!-- question End -->
 
     <div class="menuWrap w1440px">
-      <img class="footerLogo" src="../../assets/images/footer_logo.svg">
+      <p class="logo">TEXTNET</p>
       <ul class="menu">
         <li>
-          <p class="menuTit">기술</p>
-          <p class="menuCont">Visual AI</p>
-          <p class="menuCont">AI Data</p>
+          <p class="menuTit">Vision</p>
+          <p class="menuCont">Investor AI</p>
+          <p class="menuCont">History</p>
+          <p class="menuCont">Contact</p>
+        </li>
+        
+        <li>
+          <p class="menuTit">서비스</p>
+          <p class="menuCont">AI 대화설계</p>
+          <p class="menuCont">언어자원구축</p>
+          <p class="menuCont">데이터레이블링</p>
         </li>
 
         <li>
-          <p class="menuTit">제품</p>
-          <p class="menuCont">Visual AI</p>
-          <p class="menuCont">AI API</p>
+          <p class="menuTit">채용</p>
+          <p class="menuCont">챗봇구축개발</p>
+          <p class="menuCont">연구개발직</p>
+          <p class="menuCont">영업개발</p>
         </li>
 
         <li>
-          <p class="menuTit">솔루션</p>
-          <p class="menuCont">Visual AI</p>
-          <p class="menuCont">AI Data</p>
-          <p class="menuCont">AI Scout</p>
-          <p class="menuCont">Firescout</p>
+          <p class="menuTit">팀문화</p>
+          <p class="menuCont">이렇게 일해요</p>
+          <p class="menuCont">지원제도</p>
+          <p class="menuCont">일상 엿보기</p>
         </li>
 
         <li>
           <p class="menuTit">자료실</p>
-          <p class="menuCont">리소스</p>
-          <p class="menuCont">자주하는 질문</p>
-          <p class="menuCont">블로그</p>
-        </li>
-
-        <li>
-          <p class="menuTit">회사소개</p>
-          <p class="menuCont">알체라 소개</p>
-          <p class="menuCont">보도자료</p>
-          <p class="menuCont">IR</p>
-          <p class="menuCont">인재채용</p>
-          <p class="menuCont">채용/도입문의</p>
+          <p class="menuCont">참여프로젝트</p>
+          <p class="menuCont">Press</p>
+          <p class="menuCont">AI 트렌드</p>
+          <p class="menuCont">Firescout</p>
         </li>
 
       </ul>
     </div>
     <!-- menuWrap End -->
 
-    <div class="newsWrap w1440px">
+    <!-- <div class="newsWrap w1440px">
       <div class="newsTit">
         <p class="tit">Newsletter</p>
         <p class="sub">뉴스레터를 구독하세요.</p>
@@ -77,19 +77,19 @@
         <li>4</li>
       </ul>
     </div>
-    <!-- newsWrap End -->
+    newsWrap End -->
 
     <div class="licenseWrap w1440px">
       <div class="liTop">
         <div class="licenseInfo">
-          <p class="licenseCont">(주)알체라 (대표이사: 황영규) ㅣ경기도 성남시 분당구 판교로256번길 25 GB2빌딩 C동 7층 ㅣ 사업자등록번호: 643-87-00337
-          ⓒ 2022 Alchera Inc.</p>
-          <p class="licenseCont">ⓒ 2022 Alchera Inc.</p>
+          <p class="licenseCont">(주)스피링크ㅣ서울시 용산구 한강대로 788 솔로시티 ㅣ 사업자등록번호: 123-45-67899
+          ⓒ 2022 Textnet Inc.</p>
+          <p class="licenseCont">ⓒ 2022 Textnet Inc.</p>
         </div>
         <p class="licenseDoc">개인정보처리방침 | 내부정보관리규정</p>
       </div>
 
-      <ul class="family">
+      <!-- <ul class="family">
         <li>
           Family Sites
         </li>
@@ -103,7 +103,7 @@
           <img class="familyLogo" src="../../assets/images/family3.png">
         </li>
         
-      </ul>
+      </ul> -->
     </div>
     <!-- licenseWrap End -->
   </div>
@@ -125,7 +125,7 @@ export default {
   .footerWrap .question .whiteBtn span {color: #000; font-size: 22px; line-height: 70px; font-weight: 300; text-align: center;}
 
   .footerWrap .menuWrap {overflow: hidden; padding: 80px 0 35px;}
-  .footerWrap .menuWrap .footerLogo {float: left; width: 140px;}
+  .footerWrap .menuWrap .logo {float: left; width: 140px; font-size: 40px; font-weight: 900;}
   .footerWrap .menuWrap .menu {float: right;}
   .footerWrap .menuWrap .menu li {float: left; padding: 0 10px 0 0; width: 191px; font-size:15px; color:#f8f8f8}
   .footerWrap .menuWrap .menu li:nth-child(5) {width: inherit;}

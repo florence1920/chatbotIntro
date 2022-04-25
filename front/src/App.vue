@@ -14,6 +14,10 @@ export default {
   components: {
     Nav, Footer,
   },
+  created () {
+      this.$store.dispatch('GET_MEMBERS');
+      console.log('mounted');
+  },
  
 }
 </script>

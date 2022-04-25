@@ -1,55 +1,58 @@
 <template>
   <div class="sumWrap">
-    <p class="sumTit">Make your AI Dreams a Reality</p>
-    <div class="contWrap">
-      <p class="sumCont">알체라는 얼굴, 영상인식 Visual AI 분야의 국내 1위 업체로</p>
-      <p class="sumCont">인공지능으로 고객의 삻과 사회를 혁신하는 AI 회사입니다.</p>
+    <p class="sumTit" data-aos="fade-up" data-aos-duration="500">A good beginning is half the battle</p>
+    <div class="contWrap" data-aos="fade-up" data-aos-duration="500">
+      <p class="sumCont">정돈되지 않은 생각과 데이터를 가치있는 지식으로 만들어</p>
+      <p class="sumCont">사람만이 가능한 Design Thinking을 촉발시키는 것이 TEXTNET의 존재 이유입니다.</p>
     </div>
 
-    <ul class="boxWrap">
+    <ul class="boxWrap" data-aos="fade-up" data-aos-duration="500">
       <li>
         <img src="../../assets/images/sum_1.svg" alt="">
         <div class="sumPoint">
           <span class="point_1">국내 <span class="point_2">1</span> 위</span>
         </div>
         <div class="sumCont">
-          <p class="contTit">NIST FRVT 2개 부문 국내 1위</p> 
-          <p class="cont">*미국 국립표준기술연구소</p> 
+          <p class="contTit">텍스트서비스 부문 국내 1위</p> 
+          <p class="cont">*LeeSeungHeon fficial</p> 
         </div>
       </li>
       <li>
         <img src="../../assets/images/sum_2.svg" alt="">
         <div class="sumPoint">
-          <span class="point_1"><span class="point_2">3.12</span>억대</span>
+          <span class="point_1"><span class="point_2" id="countt">
+            
+         </span>억원</span>
         </div>
         <div class="sumCont">
-          <p class="contTit">현재까지 알체라 AI기술이 적용된 카메라 개수</p> 
-          <p class="cont">*미국 국립표준기술연구소</p> 
+          <p class="contTit">넵툰 Series A 투자 유치</p> 
         </div>
       </li>
       <li>
         <img src="../../assets/images/sum_3.svg" alt="">
         <div class="sumPoint">
-          <span class="point_1"><span class="point_2">99.9</span>%</span>
+          <span class="point_1"><span class="point_2" id="countt1"></span>%</span>
         </div>
         <div class="sumCont">
-          <p class="contTit">알체라 AIIR SDK 얼굴인식 정확도</p> 
-          <p class="cont">*AIIR SDK - AI 얼굴인식엔진</p> 
+          <p class="contTit">TEXTNET 데이터 레이블링 정확도</p> 
+          <p class="cont">*LeeSeungHeon fficial</p> 
         </div>
       </li>
     </ul>
+    
   </div>
 </template>
 
 <script>
 export default {
-
+  methods : {
+  },
 }
 </script>
 
 <style scoped>
   .sumWrap {width: 1440px; margin: 0 auto; padding: 200px 0 0; text-align:center;}
-  .sumWrap .sumTit {font-size: 45px; font-weight: 600;}
+  .sumWrap .sumTit {font-size: 48px; font-weight: 600; color: #0c254b;}
   .sumWrap .contWrap {margin:40px 0 0; font-size: 20px; font-weight: 300; line-height: 30px;}
 
   .sumWrap .boxWrap {overflow: hidden; margin:100px 0 0; width: 100%; height: 380px;}
